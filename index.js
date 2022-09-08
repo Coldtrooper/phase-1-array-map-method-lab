@@ -12,5 +12,15 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map((newSentence) => {
+    newSentence.split(' ').map((word) => {
+      console.log(word).toUpperCase();  
+    })
+  })
 }
+
+
+
+// Loop each string and change each string into words.
+// Loop through every word. Once that is done, capitalize first letter of each word.
+// After, rejoin very word back into orginial sentence and return new array.
